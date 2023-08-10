@@ -1,0 +1,200 @@
+html {
+    font-size: 14px;
+}
+/*
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}*/
+/*
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}*/
+
+
+/* Set the page height to 100% */
+html, body {
+    height:100%;
+}
+
+/* Use flexbox to create equal height columns */
+.container {
+    display: flex;
+    height: 99%; /* Set the container height to 100% of the page height */
+}
+
+.column {
+    width: 50%; /* Set the width of each column to 50% to make them side by side */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    padding: 10px; /* Add some padding for spacing */
+    border-style: groove;
+    margin: 4px;
+}
+
+    /* Add some styling to the columns for better visualization */
+    .column h2 {
+        background-color: #f0f0f0;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+.gray-button {
+    background-color: rgb(121,128,147);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+}
+.gray-button-left {
+    background-color: rgb(121,128,147);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    /*padding: 2px 4px;*/
+    margin-top: 10px;
+    margin-right: 8px;
+    width: 80px;
+    height: 25px;
+}
+
+.gray-button-right {
+    background-color: rgb(121,128,147);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    /*padding: 2px 4px;*/
+    margin-top: 10px;
+    margin-right: 1px;
+    width: 90px;
+    height: 25px;
+}
+
+.center {
+     margin: auto;
+    width: 60%;
+}
+.center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+/* Add hover effect */
+.gray-button:hover {
+    background-color: #666;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: rgb(83, 185, 83);
+    ;
+    background-color: rgb(170, 255, 170);
+    color: rgb(8, 142, 31);
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 40px;
+} 
+
+
+
+ 
+
+/*Modal*/
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    font-weight: bold;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
